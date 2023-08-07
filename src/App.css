@@ -1,38 +1,306 @@
-.App {
+html {
+  font-family: 'Inter', sans-serif;
+}
+.home-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.home-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-div p {
+  color: #2c63e6;
+  font-weight: 900;
+  font-size: 20px;
+}
+.home-div h1 {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.emp-profile {
+	padding: 60px !important;
+	margin-top: 85px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.emp-pro-pic img {
+  width: 345px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.profile-head h5 {
+  font-size: 27px;
+  margin-bottom: 7px;
+}
+.profile-head h6 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0079e4;
+}
+.profile-head p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 50px;
+}
+.profile-head {
+  padding-top: 20px;
+}
+.tab-pane .row .col-md-6:first-child {
+  font-weight: 700;
+}
+.tab-pane .row {
+  margin-bottom: 20px;
+}
+#myTabContent {
+	margin-top: -135px;
+}
+
+.profile-edit-button {
+	border: none;
+	outline: none;
+	background: #eee;
+	padding: 5px 20px;
+	border-radius: 40px;
+	font-weight: 600;
+	color: #484848;
+}
+
+
+#notfound {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.notfound-404 h1 {
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -53%);
+  font-size: 300px;
+  font-weight: 600;
+  color: #0000001a;
+  z-index: -1;
+}
+.notfound h2 {
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.notfound p {
+  font-size: 17px;
+  color: #000;
+  text-transform: uppercase;
+  max-width: 891px;
+}
+.notfound a {
+  background: #0079e4;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.notfound a:hover {
+	color: #fff;
+	background: #026cca;
+}
+.connect-btn {
+  display: inline-flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: rgb(255, 255, 255);
+  background-color: rgb(71, 75, 163);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  min-width: 120px;
+  padding: 0.4rem 1.4rem;
+  border-radius: 10px;
+}
+.connect-btn:hover {
+  text-decoration: none;
+  background-color: rgb(49, 52, 114);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+.connect-btn:active {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-three-dot {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px 0px 0px -4px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  text-align: center;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  overflow: visible;
+  color: rgba(0, 0, 0, 0.54);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  padding: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-three-dot:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo a img {
+  width: auto;
+  height: 60px;
+}
+.nav-logo ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-logo ul li a {
+	padding: 11px 22px;
+	display: inline-block;
+  color: rgb(111, 113, 131);
+  transition: .3s ease;
+}
+
+
+#notfound {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.notfound-404 h1 {
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -53%);
+  font-size: 300px;
+  font-weight: 600;
+  color: #0000001a;
+  z-index: -1;
+}
+.notfound h2 {
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.notfound p {
+  font-size: 17px;
+  color: #000;
+  text-transform: uppercase;
+  max-width: 891px;
+}
+.notfound a {
+  background: #0079e4;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.notfound a:hover {
+	color: #fff;
+	background: #026cca;
+}
+.nav-logo ul li a div {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.nav-fade-up {
+  -webkit-animation: fade-in .25s ease-in-out;
+    animation: fade-in .25s ease-in-out;
+
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  } 
+  100% {
+    /* display: inline-block; */
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.wallet-connect {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.connect-btn span:first-child {
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.nav-active {
+  color: rgb(81, 85, 166);
 }
